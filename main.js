@@ -1,7 +1,6 @@
 const button = document.querySelector("#click-me");
 
 function handleClick(event) {
-  // If clicked, console log you clicked me!
   // If shift key pressed, change the inner text of the button to be NAILED IT
 }
 
