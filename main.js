@@ -1,5 +1,7 @@
 const button = document.querySelector("#click-me");
 
+button.addEventListener("click", handleClick);
+
 function handleClick(event) {
   console.log("You clicked me!")
   console.log(event)
@@ -10,7 +12,14 @@ function handleClick(event) {
   }
 }
 
-button.addEventListener("click", handleClick);
+const flowerButton = document.querySelector(".task-2")
+flowerButton.addEventListener("click", changeTitle)
+
+function changeTitle(event){
+	document.title = "💐🌷🌼"
+}
+
+
 
 document.querySelector("#title-changer").addEventListener("keyup", (e) => {
   console.log(e.target.value);
