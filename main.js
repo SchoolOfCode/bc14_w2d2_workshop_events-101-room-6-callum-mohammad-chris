@@ -19,7 +19,13 @@ function changeTitle(event){
 	document.title = "💐🌷🌼"
 }
 
+let titleInput = document.querySelector("#title-changer")
+titleInput.addEventListener("keyup", changeHeading )
+document.querySelector("#title-changer").placeholder =("Type in me Anna!")
 
+function changeHeading(event){
+	document.querySelector("h1").textContent = event.target.value
+}
 
 document.querySelector("#title-changer").addEventListener("keyup", (e) => {
   console.log(e.target.value);
