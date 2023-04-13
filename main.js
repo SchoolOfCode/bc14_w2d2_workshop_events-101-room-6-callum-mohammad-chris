@@ -41,3 +41,14 @@ function changeColour(event){
 function changeColourBack(event){
   document.querySelector("h1").style.color = "initial"
 }
+
+let checkbox = document.querySelector("#check-box")
+checkbox.addEventListener("click", addClass)
+
+function addClass(event){
+    if (checkbox.checked === true){
+      document.querySelector("h1").classList.add("funky")
+  }else{
+    document.querySelector("h1").classList.remove("funky")
+  }
+}
